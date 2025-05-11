@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Env files
+.env
+.env.*
+
+# Misc
+*.local
+*.cache
+
+# Coverage
+coverage/
+
+# Optional: lock files (si usas solo npm o solo yarn, puedes ignorar el otro)
+yarn.lock
+pnpm-lock.yaml 

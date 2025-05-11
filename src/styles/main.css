@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #181824;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background: #23233b;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.header-img img {
+  width: 200px;
+  border-radius: 1rem;
+}
+
+.header-content {
+  margin-left: 2rem;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header-note {
+  color: #ffb347;
+  margin-top: 1rem;
+}
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebar {
+  min-width: 200px;
+  background: #23233b;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #ffb347;
+  color: #23233b;
+}
+
+.sidebar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.recipes-section {
+  flex: 1;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background: #23233b;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.recipe-title {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sort-control {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.recipe-detail {
+  background: #23233b;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.recipe-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+.ingredient-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181824;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.ingredient-list button {
+  background: #ffb347;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  color: #23233b;
+  font-weight: bold;
+}
+
+.category-search {
+  margin-bottom: 1rem;
+}
+.category-search input {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.2rem;
+  border: none;
+  background: #181824;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-top: 0.2rem;
+}
+.desktop-search { display: block; }
+.mobile-search { display: none; }
+
+@media (max-width: 600px) {
+  .main-content {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    display: block;
+  }
+  .recipes-section {
+    margin-top: 1.2rem;
+  }
+  .sidebar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.7rem;
+  }
+  .sidebar li {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+    margin-bottom: 0;
+    background: #181824;
+    border: 1.5px solid #23233b;
+    box-sizing: border-box;
+  }
+  .sidebar li.active {
+    background: #ffb347;
+    color: #23233b;
+    border: 1.5px solid #ffb347;
+  }
+  .sidebar {
+    padding: 0.7rem 0.2rem;
+    border-radius: 1rem;
+  }
+  .sidebar h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .sort-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0.7rem;
+    background: #23233b;
+    border-radius: 1rem;
+    padding: 0.3rem 0.7rem;
+    width: fit-content;
+    margin-left: auto;
+  }
+  .desktop-search { display: none; }
+  .mobile-search { display: block; margin-top: 1rem; }
+  .category-search input {
+    font-size: 0.98rem;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+  }
+} 

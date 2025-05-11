@@ -1,0 +1,33 @@
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    min-width: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .header-img img {
+    width: 120px;
+  }
+  .header-content {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  .recipe-detail {
+    padding: 1rem;
+  }
+  .sort-control {
+    display: block;
+  }
+} 
