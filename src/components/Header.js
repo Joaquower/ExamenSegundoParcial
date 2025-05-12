@@ -12,7 +12,7 @@ export default function Header() {
       <div className="hero-content">
         <div className="hero-left">
           <div className="hero-logo-row">
-            <img src="https://i.imgur.com/8XoA1bI.png" alt="HomeChef" className="hero-logo" />
+            <img src="https://cdn-icons-png.flaticon.com/512/450/450166.png" alt="HomeChef" className="hero-logo" />
             <span className="hero-brand">HomeChef</span>
           </div>
           <h1 className="hero-title">
