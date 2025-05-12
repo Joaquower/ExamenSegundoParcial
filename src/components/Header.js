@@ -6,23 +6,25 @@ export default function Header() {
     <header className="hero">
       <img
         className="hero-bg"
-        src="https://www.hotelplayamazatlan.com/media/uploads/cms_apps/imagenes/inner-restaurante-detalle-maza-nuev.jpg?q=pr:sharp/rs:fill/w:1920/h:700/g:ce/f:jpg"
+        src="https://www.sandos.com/sites/default/files/styles/12_5_1920/public/2024-02/Sandos%20Playacar%20Iztapalapa.jpg?h=6273b3ea&itok=IlYpkzo_"
         alt="Hero background"
       />
       <div className="hero-content">
         <div className="hero-left">
-          <div className="hero-logo-row">
-            <span className="hero-logo" role="img" aria-label="chef">🍍</span>
-            <span className="hero-brand">HomeChef</span>
+          <div className="hero-logo-container">
+            <img src="https://i.ibb.co/Qj1bGbk/homechef-logo.png" alt="HomeChef" className="hero-logo" />
           </div>
           <h1 className="hero-title">
             Chefs<br />Academy<br />Secrets
           </h1>
         </div>
         <div className="hero-right">
-          <span className="hero-note">● New recipe for you to try out, let's cook!</span>
+          <div className="hero-note">
+            <span className="hero-dot">●</span>
+            New recipe for you to try out, let's cook!
+          </div>
         </div>
       </div>
     </header>
   );
-} 
+}
