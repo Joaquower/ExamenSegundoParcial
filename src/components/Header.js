@@ -14,7 +14,9 @@ export default function Header() {
           <div className="hero-logo-container">
             <img src="https://i.ibb.co/Qj1bGbk/homechef-logo.png" alt="HomeChef" className="hero-logo" />
           </div>
-          <h1 className="hero-title">Chefs Academy Secrets</h1>
+          <h1 className="hero-title">
+            Chefs<br />Academy<br />Secrets
+          </h1>
         </div>
         <div className="hero-right">
           <div className="hero-note">
