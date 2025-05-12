@@ -6,13 +6,13 @@ export default function Header() {
     <header className="hero">
       <img
         className="hero-bg"
-        src="https://www.hotelplayamazatlan.com/media/uploads/cms_apps/imagenes/inner-restaurante-detalle-maza-nuev.jpg?q=pr:sharp/rs:fill/w:1920/h:700/g:ce/f:jpg"
+        src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
         alt="Hero background"
       />
       <div className="hero-content">
         <div className="hero-left">
           <div className="hero-logo-row">
-            <span className="hero-logo" role="img" aria-label="chef">🍍</span>
+            <img src="https://i.imgur.com/8XoA1bI.png" alt="HomeChef" className="hero-logo" />
             <span className="hero-brand">HomeChef</span>
           </div>
           <h1 className="hero-title">
@@ -25,4 +25,4 @@ export default function Header() {
       </div>
     </header>
   );
-} 
+}
