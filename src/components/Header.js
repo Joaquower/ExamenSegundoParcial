@@ -6,7 +6,7 @@ export default function Header() {
     <header className="hero">
       <img
         className="hero-bg"
-        src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg"
+        src="https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/anantara-siam-hotel/experience/details-page/luxury-dinner-cruise/anantara_siam_experiences_luxurydinnercruise_header_1920x600.jpg"
         alt="Hero background"
       />
       <div className="hero-content">
