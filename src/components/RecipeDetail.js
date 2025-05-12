@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import IngredientList from "./IngredientList";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export default function RecipeDetail({ detail }) {
+  const navigate = useNavigate();
   const [removed, setRemoved] = useLocalStorage(`removed-ingredients-${detail?.idMeal}`, []);
+  
   if (!detail) return null;
 
   // Extrae ingredientes y medidas
@@ -22,6 +25,12 @@ export default function RecipeDetail({ detail }) {
 
   return (
     <div className="recipe-detail">
+      <button 
+        onClick={() => navigate('/')} 
+        className="back-button"
+      >
+        ← Back to recipes
+      </button>
       <img src={detail.strMealThumb} alt={detail.strMeal} />
       <h2>{detail.strMeal}</h2>
       <p><b>Category:</b> {detail.strCategory}</p>
@@ -36,4 +45,4 @@ export default function RecipeDetail({ detail }) {
       )}
     </div>
   );
-} 
+}

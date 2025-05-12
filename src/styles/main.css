@@ -126,6 +126,25 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 2rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #ffb347;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  color: #23233b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-button:hover {
+  background: #ffa327;
 }
 
 .recipe-detail img {
@@ -133,7 +152,7 @@ body {
   max-width: 400px;
   border-radius: 1rem;
   display: block;
-  margin: 0 auto 2rem auto;
+  margin: 3.5rem auto 2rem auto;
 }
 
 .ingredient-list {
@@ -183,5 +202,17 @@ body {
   }
   .recipe-detail {
     padding: 1rem;
+  }
+  .back-button {
+    position: fixed;
+    top: auto;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .recipe-detail img {
+    margin-top: 1rem;
   }
 }
