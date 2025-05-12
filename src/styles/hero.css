@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 500px;
 }
 
 .hero-logo-container {
@@ -48,11 +49,12 @@
 
 .hero-title {
   font-family: 'Georgia', serif;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 700;
   color: #1F1F1F;
-  line-height: 1.2;
+  line-height: 1;
   margin: 0;
+  letter-spacing: -0.02em;
 }
 
 .hero-right {
@@ -97,7 +99,9 @@
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 36px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .hero-right {
